@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
 <head>
-  <Title> "SQL" </Title>
+	<meta charset="utf-8">
+	<meta name="viewport" 		content="width=device-width, initial-scale=1.0">
+	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
+	<Title>Chris Brown | SQL</Title>
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 <style>
 .collapsible {
  	background-color: #ab3629;
 	height: 10%; /*reactive*/
-	margin-left: 40px;
+	/*margin-left: 14%; controlled by main class*/
   	color: white;
   	cursor: pointer;
   	/*padding: 18px; /*non-reactive*/
@@ -28,7 +31,7 @@
 
 .collapsible:after {
   	content: '\002B'; /* Unicode character for "plus" sign (+) */
-  	margin-left: 40px;
+  	/*margin-left: 14%; controlled by main class*/
 	color: white;
   	font-weight: bold;
   	float: Right;
@@ -44,7 +47,7 @@
 .content {
   	padding: 0 18px;
 	width: 80%; 
-  	margin-left: 40px;
+  	/*margin-left: 14%; controlled by main class*/
  	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
@@ -72,12 +75,13 @@ body, html {
 }
 
 .hero-text {
+  	font-family: times,serif;
   	text-align: center;
   	position: absolute;
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
- 	 color: white;
+  	color: white;
 }
 
 
@@ -122,9 +126,11 @@ body, html {
 
 .main {
   	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
-	margin-left: 11%; /* Same width as the sidebar + left position in px */ /*reponsive*/
-  	/*font-size: 28px; /* Increased text to enable scrolling */
-  	padding: 0px 10px;
+	padding: 0px 10px;
+	font-style:normal;
+	/*margin-left: 40px;*/
+	margin-left: 17%; /* Same width as the sidebar + left position in px */ /*reponsive*/
+	font-family: times,serif;
 }
 
 @media screen and (max-height: 450px) {
@@ -134,7 +140,7 @@ body, html {
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
 	/*margin-left: 40px;*/
-	margin-left: 4%; /*reponsive*/
+	/*margin-left: 4%; controlled by main class*/
 	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
@@ -164,14 +170,13 @@ body, html {
 <HR>
 
   <div class="sidenav">
-	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Links</U></P><br />
-    	<a href="https://chrisdbrown409.github.io/MainPage/">  Home</a><br />
-    	<a href="https://github.com/chrisdbrown409" >  GIT Hub Root</a><br />
-    	<a href="https://github.com/chrisdbrown409/MainSQL/edit/main/index.html" >  GIT Hub Repository</a><br />
-    	<a href = mailto:chrisdbrown409@gmail.com>  Email Author</a><br />
-    	<a href="https://www.linkedin.com/in/chrisbrown72/">  Author's Profile</a><br />
-	<!--- LinkedIn Profile: <a href="https://www.linkedin.com/in/chrisbrown72/" target="_blank">https://www.linkedin.com/in/chrisbrown72/</a><br /> --->
-      </div>
+	<p style="font-size:12pt;"><U>Links</U></p>
+    	<a href="https://chrisdbrown409.github.io/MainPage/">Home</a><br />
+    	<a href="https://github.com/chrisdbrown409" >Github Root</a><br />
+    	<a href="https://github.com/chrisdbrown409/MainSQL/edit/main/index.html" >Github Repository</a><br />
+    	<a href = mailto:chrisdbrown409@gmail.com>Email Author</a><br />
+    	<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a><br />
+	</div>
  
   
   
@@ -179,20 +184,15 @@ body, html {
 
 
 <div class="main">
-<div>
-<p style="font-family: times, serif; font-size:14pt; font-style:normal;;margin-left: 40px"> <!---in line comments--->
-SQL<br />
-	</p>
-	<p style="font-family: times,serif; font-size:12pt; font-style:normal"> <!---in line comments--->
-	<blockquote>
-	Structured Query Language,<em> or SQL</em>, is one of the most common languages used today. SQL has many usages when reviewing or testing databases. There is a significant amount of information on the web regarding SQL. Only a few topics will be covered. SQL is a powerful tool that can be used to accomplish many tasks.<br />
-	<br />
-	Each section expands and explores the topics within the section.<br />
-	</blockquote>
-	</p>
-</div>
+	<div>
+		<h2 style="font-size:14pt;">SQL</h2>
+		Structured Query Language,<em> or SQL</em>, is one of the most common languages used today. SQL has many usages when reviewing or testing databases. There is a significant amount of information on the web regarding SQL. Only a few topics will be covered. SQL is a powerful tool that can be used to accomplish many tasks.<br />
+		<br />
+		Each section expands and explores the topics within the section.<br />
+		</p>
+	</div>
 	
-
+<!---start buttons--->  
 <button class="collapsible">Information</button>
 	<div class="content">
 		<br />
