@@ -360,10 +360,20 @@ Select * from table_name
 	
 	<div class="modal-footer">
                 <!---<h3 style="font-size:14pt;">Button 1 Footer</h3>--->
-		    <button id="copy">Copy</button>
+		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
+		    <button id="clipboardCopy1"> Copy </button>
+		
+		<script>	
+		// Type 2
+		document.getElementById('clipboardCopy1').addEventListener('click', clipboardCopy1);
+		async function clipboardCopy1() {
+  		let text = document.querySelector("#Textarea1").value;
+  		await navigator.clipboard.writeText(text);
+		}
+		</script> <!---moved in 19.c--->
+		
             </div>
         </div>
-
     </div>
 
     <!-- The Modal 2-->
@@ -383,11 +393,29 @@ Select * from table_name where variable_A
 		</div>
             <div class="modal-footer">
                 <!---<h3 style="font-size:14pt;">Button 2 Footer</h3>--->
-		    <button id="copy">Copy</button>
-            </div>
-        </div>
-
+		    <!--- 15+ changed to below <button id="copy">Copy</button>--->
+		    <button id="clipboardCopy2"> Copy </button>
+           
+		<script>	
+		// Type 2
+		document.getElementById('clipboardCopy2').addEventListener('click', clipboardCopy2);
+		async function clipboardCopy2() {
+  		let text = document.querySelector("#Textarea2").value;
+  		await navigator.clipboard.writeText(text);
+		}
+		</script>
     </div>
+</div> <!--- 15.1 + moved from under button--->	
+</div> 	<!--- 1.19 b  + moved from under button had to add this after added the button--->	   
+		   
+		   
+		   
+		  <!--- </div>
+        </div>
+    </div> --->
+
+
+
 
     <!-- The Modal -->
     <div id="myModal3" class="modal">
@@ -407,19 +435,20 @@ not completed: need to build basic update
   		</textarea>
 		</div>
             <div class="modal-footer">
-  		<button id="clipboardCopy"> Copy </button>
-		</div>
+  		<button id="clipboardCopy3"> Copy </button>
+		
 		
 		
 		<script>	
 		// Type 2
-		document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
-		async function clipboardCopy() {
+		document.getElementById('clipboardCopy3').addEventListener('click', clipboardCopy3);
+		async function clipboardCopy3() {
   		let text = document.querySelector("#Textarea3").value;
   		await navigator.clipboard.writeText(text);
 		}
 		</script>
     </div>
+</div> <!--- 15.1 + moved from under button--->	
 
 	    
 
@@ -483,8 +512,8 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.15 (html1: 96ef)<br />
-  		Last Update:06-26-2021<b />
+  		Version:2.0 (restore 2.00)<br />
+  		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
 </body>
@@ -496,20 +525,6 @@ Page References:
 	2. hero image: https://unsplash.com/photos/8ZAxI5FwjFo
 	3. https://pranadi.co.uk/wp-content/themes/yootheme/cache/Autumn-Visualisation-1b6a2048.jpeg
 	4. https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page
-
-	
 Site References:
-  	Site References:
-  	1. Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
-	2. Color Ref: https://blog.hubspot.com/website/change-background-color-html
-  	3. Color Picker: https://www.google.com/search?q=html+color+picker&rlz=1C1ONGR_enUS947US947&oq=html+color&aqs=chrome.2.35i39j69i57j0i433j0i20i263l2j0i433j0l3.6575j0j15&sourceid=chrome&ie=UTF-8
-	4. Email Ref: https://www.tutorialspoint.com/html/html_email_links.htm
- 	5. hero image: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
-	6. HTML Layout Document: https://www.w3schools.com/html/html_layout.asp
-	7. Lists Ref: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered
-	8. Side Nav: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed	
-	9. Side Bar: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2
-	10. Style Line: <p style="font-family: times, serif; font-size:12pt; font-style:normal">
-	
 	
   --->
