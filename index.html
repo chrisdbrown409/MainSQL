@@ -6,11 +6,11 @@
 	<meta name="viewport" 		content="width=device-width, initial-scale=1.0">
 	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
 	<Title>Chris Brown | SQL</Title>
-
+	 <link rel="stylesheet" href="modal.css">
 	
 <style>
 .collapsible {
- 	background-color: #ab3629;
+ 	background-color: #c75528;
 	height: 10%; /*reactive*/
 	/*margin-left: 14%; controlled by main class*/
   	color: white;
@@ -26,7 +26,7 @@
 }
 
 .active, .collapsible:hover {
-  background-color: #87291f;
+  background-color: #9e411c;
 }
 
 .collapsible:after {
@@ -140,7 +140,7 @@ body, html {
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
 	/*margin-left: 40px;*/
-	/*margin-left: 4%; controlled by main class*/
+	/*margin-left: 17%; controlled by main class*/
 	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
@@ -152,6 +152,98 @@ body, html {
   	font-style:normal;
 	font-family: times,serif;
  }
+	
+	
+/*start modal8*/
+     /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 17%; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            /*background-color: rgb(0, 0, 0); /* Fallback color */
+            /*background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+            overflow: auto;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            max-height: 50%;
+            overflow: auto;
+            position: relative;
+            background-color: white;
+            margin: auto;
+            padding: 0;
+            border: 3% solid #888;
+            width: 50%; /*content window size */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -60%;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -60%;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+             padding: 2% 2%;
+            background-color: #69341f;
+            color: white;
+        }
+
+        .modal-body {
+            padding: 2% 2%;
+        }
+
+        .modal-footer {
+            padding: 2% 2%;
+            background-color: #69341f;
+            color: white;
+        }
+/*modal done*/
   </style>
 </head>
 
@@ -237,10 +329,134 @@ body, html {
 		<br />
 		<b>This section lists common queries and scripts for SQL.</b><br /> 
 		<br />
-		Query: <br /><br />
-		Script: <br />
-      		</p>
-    	</div>
+		<b>Queries</b><br />
+		<br />
+		Query 1: <button id="myBtn1">Open Query 1</button></b><br /> 
+		<br />
+   		Query 2: <button id="myBtn2">Open Query 2</button></b><br /> 
+		<br /> 
+		<br /> 
+		<b>Scripts</b><br /> 
+		<br />
+    		Script 1: <button id="myBtn3">Open Script 1</button></b><br />  	
+		<!--- Each button ID should have a corresponding ModalID below--->	
+
+
+<!-- The Modal 1-->
+    <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="font-size:14pt;">Query 1: Basic Select Statement</h2>
+		<p><em>The following contents can be copied and can be pasted</em><p>
+            </div>
+            <div class="modal-body">
+                <textarea id="Textarea1" name="Textarea1" type="text" rows="6" cols="75">
+Select * from table_name
+  		</textarea>
+		</div>
+	
+	<div class="modal-footer">
+                <!---<h3 style="font-size:14pt;">Button 1 Footer</h3>--->
+		    <button id="copy">Copy</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal 2-->
+    <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+           <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="font-size:14pt;">Query 2: Basic Select Statement with where clause</h2>
+		<p><em>The following contents can be copied and can be pasted</em><p>
+            </div>
+            <div class="modal-body">
+                <textarea id="Textarea2" name="Textarea2" type="text" rows="6" cols="75">
+Select * from table_name where variable_A
+  		</textarea>
+		</div>
+            <div class="modal-footer">
+                <!---<h3 style="font-size:14pt;">Button 2 Footer</h3>--->
+		    <button id="copy">Copy</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal3" class="modal">
+
+        <!-- Modal content 3-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="font-size:14pt;">Script 1: Basic Update Script</h2>
+		    <p><em>The following contents can be copied and can be pasted</em><p>
+            </div>
+	 
+            
+	<div class="modal-body">
+		<textarea id="Textarea3" name="Textarea3" type="text" rows="6" cols="75">
+not completed: need to build basic update
+  		</textarea>
+		</div>
+            <div class="modal-footer">
+  		<button id="clipboardCopy"> Copy </button>
+		</div>
+		
+		
+		<script>	
+		// Type 2
+		document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
+		async function clipboardCopy() {
+  		let text = document.querySelector("#Textarea3").value;
+  		await navigator.clipboard.writeText(text);
+		}
+		</script>
+    </div>
+
+	    
+
+	    
+    <script>
+        var datamap = new Map([
+            [document.getElementById("myBtn1"), document.getElementById("myModal1")],
+            [document.getElementById("myBtn2"), document.getElementById("myModal2")],
+            [document.getElementById("myBtn3"), document.getElementById("myModal3")]
+        ]);
+
+        datamap.forEach((value, key) => {
+            doModal(key, value);
+        });
+
+        function doModal(anchor, popupbox) {
+
+            // Get the <span> element that closes the modal
+            var span = popupbox.getElementsByClassName("close")[0];
+
+            anchor.addEventListener("click", function (event) {
+                popupbox.style.display = "block";
+            });
+
+            span.addEventListener("click", function (event) {
+                popupbox.style.display = "none";
+            });
+
+            window.addEventListener("click", function (event) {
+                if (event.target == popupbox) {
+                    popupbox.style.display = "none";
+                }
+            });
+        }
+    </script>
+</div>
+
  
 	
 	
@@ -260,14 +476,15 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+</DIV>
 
   
   
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.00<br />
-  		Last Update:06-26-2021<br />
+  		Version:1.15 (html1: 96ef)<br />
+  		Last Update:06-26-2021<b />
 	<HR>
 </Footer>
 </body>
@@ -278,6 +495,8 @@ Page References:
 	1. https://chrisdbrown409.github.io/MainSQL/
 	2. hero image: https://unsplash.com/photos/8ZAxI5FwjFo
 	3. https://pranadi.co.uk/wp-content/themes/yootheme/cache/Autumn-Visualisation-1b6a2048.jpeg
+	4. https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page
+
 	
 Site References:
   	Site References:
